@@ -1,0 +1,67 @@
+.Doctorlist{
+    .container{
+
+        h2{
+            margin:-2em 9em;
+            white-space: nowrap;
+            font-size:4em;
+        }
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin:8em 8em;
+      .box{
+          width:25%;
+          padding-bottom: 3em;
+      }
+    
+
+        ul{
+            span{
+                color:gray;
+            }
+            li{
+                color:gray;
+            }
+        }
+    }
+    @media screen and (max-width:1012px){
+        &{
+            .one{
+                margin:-2em 4em;
+            }
+            .container{
+                flex-wrap: wrap;
+                .box{
+                    width:50%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:642px){
+        &{
+            .one{
+                margin:-2em 2em;
+            }
+            .container{
+                flex-wrap: wrap;
+                .box{
+                    width:100%;
+                }
+                a{
+                    white-space: nowrap;
+                }
+                .two{
+                    margin:3em 3em;
+                }
+                .three{
+                    margin:3em 3em;
+                }
+                .four{
+                    margin:3em 3em;
+                }
+            }
+        }
+    }
+}

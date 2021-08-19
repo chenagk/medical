@@ -1,0 +1,316 @@
+// our Departments
+.doctor{
+    background-color: #00bff3;
+    width:100%;
+
+    .container{
+        display: flex;
+        justify-content: space-around;
+
+        .left{
+            h1{
+                font-size:3em;
+                color: white;
+            }
+            p{
+                width:350px;
+                height:100px;
+            }
+        }
+
+        .right{
+            input{
+            background-color: transparent;
+            border:0;
+            border-bottom: 2px gray solid;
+            opacity: .5;
+            font-size:1.6em;
+            color:black;
+            margin:3.5em auto;
+            }
+        }
+    }
+
+    @media screen and (max-width:1077px){
+        &{
+            .container{
+                flex-wrap: wrap;
+                .left{
+                    width:100%;
+                    height: 250px;
+                }
+                .right{
+                    
+                    input{
+                        margin:-3em -2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//banner
+.banner{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        .left{
+            width:50%;
+            h1{
+                font-size:2.5em;
+                margin-top: 2em;
+            }
+            p{
+                color:gray;
+            }
+            .list{
+                display: flex;
+                justify-content: space-around;
+
+                .one{
+                    width:60%;
+                    li{
+                        font-size: 20px;
+                        color:gray;
+                    }
+                    a{
+                        background-color: black;
+                        padding:1em 1em;
+                        border-radius: 25px;
+                        margin:2em auto;
+                    }
+                }
+
+                .two{
+                    width:40%;
+                    li{
+                        font-size: 20px;
+                        color:gray;
+                    }
+                    a{
+                        background-color: black;
+                        padding:1em 1em;
+                        border-radius: 25px;
+                        margin:2em auto;
+                    }
+                }
+            }
+        }
+        .right{
+            width:40%;
+            margin:8em auto;
+            
+
+            .box1{
+                width:100%;
+                height:220px;
+                background-color: #cddc39;
+                text-align: center;
+
+                h1{
+                    font-size:2em;
+                    color:white;
+                }
+                p{
+                    color:white;
+                    
+                    
+                }
+                a{
+                    background-color: black;
+                    padding:1em 1em;
+                    color:white;
+                    border-radius: 25px;
+                    margin:2em auto;
+    
+                }
+            }
+            .box2{
+                width:100%;
+                height:220px;
+                background-color: #8bc34a;
+                text-align: center;
+                h1{
+                    font-size:2em;
+                    color:white;
+                }
+                p{
+                    color:white;
+                }
+    
+                a{
+                    background-color: black;
+                    padding:1em 1em;
+                    color:white;
+                    border-radius: 25px;
+                    margin:2.5em auto;
+    
+                }
+            }
+            .box3{
+                width:100%;
+                height:220px;
+                background-color: #4caf50;
+                text-align: center;
+                h1{
+                    font-size:2em;
+                    color:white;
+                }
+                p{
+                    color:white;
+                }
+    
+                a{
+                    background-color: black;
+                    padding:1em 1em;
+                    color:white;
+                    border-radius: 25px;
+                    margin:2em auto;
+    
+                }
+            }
+            .box4{
+                width:100%;
+                height:220px;
+                background-color: #009688;
+                text-align: center;
+                h1{
+                    font-size:2em;
+                    color:white;
+                }
+                p{
+                    font-size:1.4em;
+                    color:white;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:992px){
+        &{
+            .container{
+                .left{
+                    .list{
+                        .one{
+                            h1{
+                                font-size:1.5em;
+                            }
+                            li{
+                                font-size:1em;
+                            }
+                            a{
+                                font-size:.5em;
+                            }
+                        }
+                        .two{
+                            h1{
+                                font-size:1.5em;
+                            }
+                            li{
+                                font-size:1em;
+                            }
+                            a{
+                                font-size:.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:712px){
+        &{
+            .container{
+                .left{
+                    h1{
+                        font-size:2em;
+                    }
+                }
+                .right{
+                    .box1{
+                        h1{
+                            white-space: nowrap;
+                            font-size:1.3em;
+                        }
+                        p{
+                            font-size: .6em;
+                            margin: 1em auto;
+                            // white-space: nowrap;
+                        }
+                        a{
+                            margin:1em auto;
+                        }
+                    }
+                    .box2{
+                        h1{
+                            white-space: nowrap;
+                            font-size:1.3em;
+                        }
+                        p{
+                            font-size: .6em;
+                            margin: 1em auto;
+                        }
+                        a{
+                            // margin:3em auto;
+                        }
+                    }
+                    .box3{
+                        h1{
+                            white-space: nowrap;
+                            font-size:1.3em;
+                        }
+                        p{
+                            font-size: .6em;
+                            margin: 1em auto;
+                        }
+                        a{
+                            // margin:1em auto;
+                            // padding:.5em .7em;
+                            font-size:.6em;
+                        }
+                    }
+                    .box4{
+                        h1{
+                            white-space: nowrap;
+                            font-size:1.3em;
+                        }
+                        p{
+                            font-size: .6em;
+                            margin: 1em auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and(max-width:608px){
+        &{
+            .container{
+                .left{
+                    h1{
+                        font-size:1.5em;
+                    }
+                    .list{
+                        .one{
+                            margin:3em auto;
+                            h1{
+                                font-size:1.4em;
+                            }
+                        }
+                        .two{
+                            margin:3em auto;
+                            h1{
+                                font-size:1.4em;
+                            }
+                            white-space: nowrap;
+                        }
+                    }
+                }
+                .right{
+                    margin:3em auto;
+                }
+            }
+        }
+    }
+}
